@@ -1,0 +1,44 @@
+{
+  "name": "publish_vue",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "willchen <1300546909@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --open --hot",
+    "tbuild": "cross-env NODE_ENV=development webpack --config webpack.config.js -w --hide-modules=true --display-chunks=false --color=true --progress",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --hide-modules"
+  },
+  "dependencies": {
+    "element-ui": "^1.2.9",
+    "vue": "^2.2.6"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.0.0",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-component": "^0.10.0",
+    "babel-plugin-syntax-jsx": "^6.18.0", 
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.4.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "qs": "^6.4.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

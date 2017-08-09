@@ -1,0 +1,22 @@
+{
+  "presets": [
+      ["es2015", { "modules": false }],
+      "stage-0"
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    ["transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    ["component", [
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-default"
+       }
+    ]]  
+  ],
+  
+}
